@@ -71,6 +71,7 @@ a:link {
     padding:0.5em;
     background-color: #be7868;
     border-radius:0.5rem;
+    box-sizing: border-box;
 }
 
 .aboutme h3 {
@@ -83,8 +84,44 @@ a:link {
 }
 
 .portfolio {
-	/*display:none;*/
+	text-align: center;
+	text-decoration: underline;
+	left:22em;
+	width:33%;
+	display:none;
+}
+
+.portfolio img {
+	margin:auto;
+	display:block;
+	align:center;
+	height:12em;
+	padding-bottom:1rem;
 }
 .contact {
-	display:none;
+	background-color: none;
+	/*display:none;*/
+}
+
+.socialicons {
+	list-style-type: none;
+
+}
+
+.socialicons li{
+	border: 1px solid #eaebec;
+	border-radius: 1.25rem;
+	width:2.5rem;
+	height:2.5rem;
+	margin:0 5px;
+
+}
+
+.socialicons .twitter {
+	color:#55acee;
+	padding:1px;
+}
+
+.socialicons .facebook {
+	color:#4c66a4;
 }
