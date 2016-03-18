@@ -1,0 +1,90 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Bilbo', cursive;
+    border-top: 1em solid red;
+    border-left: 1em solid red;
+    border-radius: 1em;
+}
+
+div {
+    /*border: 1px solid red;*/
+}
+
+.masthead {
+    background-image: url(../images/brick-wall.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40em;
+    margin: 9em 6em 2em 6em;
+}
+
+.name,
+.jobtitle {
+    font-size: 68px;
+    position: absolute;
+    text-transform: uppercase;
+    background-color: white;
+    width:100%;
+}
+
+.name {
+    top: 3em;
+    left: 0.5em;
+    text-align: center;
+}
+
+.jobtitle {
+    top: 10em;
+    left: 10em;
+}
+
+.information {
+    font-size: 2em;
+    text-align: center;
+}
+
+.information .links-list li {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+#portfolio {
+    padding: 0 8em;
+}
+
+a: {
+    color: black;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.aboutme,
+.portfolio,
+.contact {
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    width: 49%;
+    padding:0.5em;
+    background-color: #be7868;
+    border-radius:0.5rem;
+}
+
+.aboutme h3 {
+    text-decoration: underline;
+}
+
+.aboutme {
+    margin-left: 12em;
+    display:none;
+}
+
+.portfolio {
+	/*display:none;*/
+}
+.contact {
+	display:none;
+}
