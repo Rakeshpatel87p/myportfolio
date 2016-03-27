@@ -2,9 +2,8 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Bilbo', cursive;
-    border-top: 1em solid red;
-    border-left: 1em solid red;
-    border-radius: 1em;
+    border-top: 0.2rem solid #F22613;
+    border-left: 0.2rem solid #F22613;
 }
 
 div {
@@ -12,31 +11,41 @@ div {
 }
 
 .masthead {
-    background-image: url(../images/brick-wall.jpg);
+    background-image: url(../images/sky.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 40em;
-    margin: 9em 6em 2em 6em;
+    height: 30em;
+    width: auto;
+    margin: 5em 6em 2em 6em;
 }
 
 .name,
 .jobtitle {
-    font-size: 68px;
     position: absolute;
     text-transform: uppercase;
     background-color: white;
-    width:100%;
+    padding: 0;
 }
 
 .name {
-    top: 3em;
-    left: 0.5em;
+    font-size: 53px;
+    top: 1.5em;
+    left: 1.5em;
+    height: 0.9em;
     text-align: center;
+    padding-bottom: 0.2em;
+    border-radius: 2em;
+    width: 40%;
 }
 
 .jobtitle {
-    top: 10em;
+    font-size: 46px;
+    top: 11.2em;
     left: 10em;
+    border-radius: 2rem;
+    padding-left: 0.2em;
+    width:100%;
+    text-decoration: underline #F22613;
 }
 
 .information {
@@ -46,32 +55,45 @@ div {
 
 .information .links-list li {
     display: inline-block;
-    margin: 0 auto;
+    margin:1rem 0;
+    padding:.3em;
+
 }
 
-#portfolio {
-    padding: 0 8em;
+#aboutme_link:hover,
+#portfolio_link:hover,
+#contact_link:hover {
+    cursor:pointer;
 }
 
-a: {
-    color: black;
+.styling_links{
+    border-left: 2px solid #F22613;
 }
 
-a:link {
-    text-decoration: none;
+.styling_links2 {
+    border-bottom: 2px solid #F22613;
+}
+
+.styling_links3 {
+    border-right: 2px solid #F22613;
+}
+
+#portfolio_link {
+    margin: 0 8em;
 }
 
 .aboutme,
 .portfolio,
 .contact {
-    position: absolute;
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
-    width: 49%;
-    padding:0.5em;
-    background-color: #be7868;
-    border-radius:0.5rem;
+    width: 69%;
+    padding: 0.5em;
+    background-color: #EEEEEE;
+    border-radius: 0.5rem;
     box-sizing: border-box;
+    box-shadow: 0 0 35px #F22613;
+    margin-bottom: 4em;
 }
 
 .aboutme h3 {
@@ -79,49 +101,113 @@ a:link {
 }
 
 .aboutme {
-    margin-left: 12em;
-    display:none;
+    margin-left: 14em;
+    display: none;
+   
 }
 
 .portfolio {
-	text-align: center;
-	text-decoration: underline;
-	left:22em;
-	width:33%;
-	display:none;
+    text-align: center;
+    text-decoration: underline;
+    left: 8em;
+    width: 78%;
+    display: none;
+    position:relative;
+    height:37em;
+}
+
+.portfolio p {
+    text-decoration: underline;
 }
 
 .portfolio img {
-	margin:auto;
-	display:block;
-	align:center;
-	height:12em;
-	padding-bottom:1rem;
+    margin: auto;
+    height: 12em;
+    padding-bottom: 1rem;
+    width:auto;
 }
+
+.aboutme_page,
+.streetfight,
+.karma,
+.nytimes {
+    position:absolute;
+}
+
+.aboutme_page {
+    left:4em;
+}
+
+.streetfight {
+    right:4em;
+}
+
+.karma {
+    bottom:2.3em;
+    left:27em;
+}
+
+.nytimes {
+    top:18em;
+    left:4em;
+}
+
+.portfolio a:link{
+    opacity:0.3;
+}
+
+.portfolio a:hover {
+    opacity:1;
+}
+
 .contact {
-	background-color: none;
-	/*display:none;*/
+    display: none;
+    float:right;
+    width:10%;
+    margin-right:9em;
+    background-color: white;
+    box-shadow: none;
+    margin: -3em 9.7em 0 0;
 }
 
 .socialicons {
-	list-style-type: none;
-
+    list-style-type: none;
 }
 
-.socialicons li{
-	border: 1px solid #eaebec;
-	border-radius: 1.25rem;
-	width:2.5rem;
-	height:2.5rem;
-	margin:0 5px;
-
+.socialicons li {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0 5px;
 }
 
 .socialicons .twitter {
-	color:#55acee;
-	padding:1px;
+    color: #55acee;
 }
 
-.socialicons .facebook {
-	color:#4c66a4;
+.socialicons .linkedin {
+    color: #4c66a4;
+    padding-top: 1em;
+}
+
+.socialicons .github {
+    color: purple;
+    padding-top: 1em;
+}
+
+.socialicons .mail {
+    color:red;
+    padding-top: 1em;
+}
+
+a:visited {
+    color:inherit;
+}
+
+a:link {
+    color:inherit;
+    text-decoration: inherit;
+}
+
+.socialicons a:hover {
+    box-shadow: 0 0 35px #F22613;
 }
