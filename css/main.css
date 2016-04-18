@@ -4,10 +4,57 @@ body {
     font-family: 'Bilbo', cursive;
     border-top: 0.2rem solid #F22613;
     border-left: 0.2rem solid #F22613;
+    /*background-color: #a8a8a8;*/
 }
 
 div {
     /*border: 1px solid red;*/
+}
+
+.topNavigation {
+    /*position:fixed;*/
+}
+
+.contact {
+    display: inline;
+    float: right;
+    width: 52%;
+    margin: 1% 5.4% 0 0;
+}
+
+.socialicons {
+    list-style-type: none;
+}
+
+.socialicons li {
+    display: inline;
+    float:right;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0 1em;
+    opacity:0.2;
+}
+
+.socialicons .twitter {
+    color: #55acee;
+}
+
+.socialicons .linkedin {
+    color: #4c66a4;
+}
+
+.socialicons .github {
+    color: purple;
+}
+
+.socialicons .mail {
+    color: red;
+}
+
+.socialicons a:hover {
+    box-shadow: 0 0 35px #F22613;
+    border-radius: 1em;
+    opacity:1;
 }
 
 .masthead {
@@ -17,6 +64,10 @@ div {
     height: 30em;
     width: auto;
     margin: 5em 6em 2em 6em;
+}
+
+.masthead-change {
+    background: linear-gradient( rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)), url(../images/sky.jpg);
 }
 
 .name,
@@ -29,8 +80,7 @@ div {
 
 .name {
     font-size: 53px;
-    top: 1.5em;
-    left: 1.5em;
+    margin: 6% 0 0 2%;
     height: 0.9em;
     text-align: center;
     padding-bottom: 0.2em;
@@ -38,176 +88,129 @@ div {
     width: 40%;
 }
 
+.name:hover {
+    cursor:pointer;
+
+}
+
+.mypicture img {
+    float:right;
+    margin-top:-40%;
+    margin-right:7%;
+    border-radius:14em;
+    display:none;
+}
+
 .jobtitle {
     font-size: 46px;
-    top: 11.2em;
-    left: 10em;
+    margin: 11.2em 0 0 13em;
     border-radius: 2rem;
     padding-left: 0.2em;
-    width:100%;
-    text-decoration: underline #F22613;
-}
-
-.information {
-    font-size: 2em;
-    text-align: center;
-}
-
-.information .links-list li {
-    display: inline-block;
-    margin:1rem 0;
-    padding:.3em;
-
-}
-
-#aboutme_link:hover,
-#portfolio_link:hover,
-#contact_link:hover {
-    cursor:pointer;
-}
-
-.styling_links{
-    border-left: 2px solid #F22613;
-}
-
-.styling_links2 {
-    border-bottom: 2px solid #F22613;
-}
-
-.styling_links3 {
-    border-right: 2px solid #F22613;
-}
-
-#portfolio_link {
-    margin: 0 8em;
+    width: 48%;
 }
 
 .aboutme,
-.portfolio,
-.contact {
-    font-size: 20px;
+.portfolio {
+    font-size: 16px;
     font-family: 'Oswald', sans-serif;
-    width: 69%;
     padding: 0.5em;
-    background-color: #EEEEEE;
     border-radius: 0.5rem;
     box-sizing: border-box;
-    box-shadow: 0 0 35px #F22613;
     margin-bottom: 4em;
+    /*background: linear-gradient(orange, yellow);*/
 }
 
 .aboutme h3 {
     text-decoration: underline;
+
 }
 
 .aboutme {
-    margin-left: 14em;
+    margin-left: 6%;
+    margin-top:-27em;
+    width:90%;
     display: none;
-   
+    text-align:center;
 }
 
-.portfolio {
-    text-align: center;
+.aboutme .partI,
+.partII,
+.partIII {
+    display:inline-block;
+    vertical-align: top;
+    width:25%;
+    padding:2%;
+    margin-right:2%;
+    background: linear-gradient(#FF851B, #FFDC00);
+    border-radius:2em;
+    box-shadow: 0px 6px 7px #FF4136;
+}
+
+/*.portfolio {
     text-decoration: underline;
-    left: 8em;
-    width: 78%;
-    display: none;
-    position:relative;
-    height:37em;
-}
+    margin-left: 27em;
+    margin-top:-23em;
+    width: 50%;
+    height: 37em;
+}*/
 
-.portfolio p {
+.headers > h2 {
     text-decoration: underline;
+    display:none;
 }
 
-.portfolio img {
-    margin: auto;
-    height: 12em;
-    padding-bottom: 1rem;
-    width:auto;
+.portfolio-images > img {
+    height: 23em;
+    width: auto;
+    display:none;
 }
 
 .aboutme_page,
 .streetfight,
 .karma,
 .nytimes {
-    position:absolute;
+    display:none;
 }
 
-.aboutme_page {
-    left:4em;
+.navigateForward,
+.navigateBack {
+    /*color:white;*/
 }
-
-.streetfight {
-    right:4em;
-}
-
-.karma {
-    bottom:2.3em;
-    left:27em;
-}
-
-.nytimes {
-    top:18em;
-    left:4em;
-}
-
-.portfolio a:link{
-    opacity:0.3;
+.portfolio a:link {
+    opacity: 0.3;
 }
 
 .portfolio a:hover {
-    opacity:1;
-}
-
-.contact {
-    display: none;
-    float:right;
-    width:10%;
-    margin-right:9em;
-    background-color: white;
-    box-shadow: none;
-    margin: -3em 9.7em 0 0;
-}
-
-.socialicons {
-    list-style-type: none;
-}
-
-.socialicons li {
-    width: 2.5rem;
-    height: 2.5rem;
-    margin: 0 5px;
-}
-
-.socialicons .twitter {
-    color: #55acee;
-}
-
-.socialicons .linkedin {
-    color: #4c66a4;
-    padding-top: 1em;
-}
-
-.socialicons .github {
-    color: purple;
-    padding-top: 1em;
-}
-
-.socialicons .mail {
-    color:red;
-    padding-top: 1em;
+    opacity: 1;
 }
 
 a:visited {
-    color:inherit;
+    color: inherit;
 }
 
 a:link {
-    color:inherit;
+    color: inherit;
     text-decoration: inherit;
 }
 
-.socialicons a:hover {
-    box-shadow: 0 0 35px #F22613;
+@media screen and (max-width: 400px) {
+    /*.masthead {
+        background-size: contain;
+        height:22em;
+        margin: 1em 36em 0em 1em;
+    }
+
+    .name {
+        font-size: 29px
+        top:0.5em;
+        left:0.5em;
+        width:21%;
+    }
+
+    .jobtitle {
+        font-size:26px;
+        top:9.2em;
+        left:7.2em;
+        width:22%;
+    }*/
 }
