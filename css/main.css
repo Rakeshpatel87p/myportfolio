@@ -4,15 +4,6 @@ body {
     font-family: 'Bilbo', cursive;
     border-top: 0.2rem solid #F22613;
     border-left: 0.2rem solid #F22613;
-    /*background-color: #a8a8a8;*/
-}
-
-div {
-    /*border: 1px solid red;*/
-}
-
-.topNavigation {
-    /*position:fixed;*/
 }
 
 .contact {
@@ -28,11 +19,17 @@ div {
 
 .socialicons li {
     display: inline;
-    float:right;
+    float: right;
     width: 2.5rem;
     height: 2.5rem;
-    padding: 0 1em;
-    opacity:0.2;
+    padding: 0.5% 2em 0% 7%;
+    opacity: 0.2;
+}
+
+.socialicons >li:hover {
+    box-shadow: 0 0 35px #F22613;
+    border-radius: 2em;
+    opacity: 1;
 }
 
 .socialicons .twitter {
@@ -49,12 +46,6 @@ div {
 
 .socialicons .mail {
     color: red;
-}
-
-.socialicons a:hover {
-    box-shadow: 0 0 35px #F22613;
-    border-radius: 1em;
-    opacity:1;
 }
 
 .masthead {
@@ -76,10 +67,11 @@ div {
     text-transform: uppercase;
     background-color: white;
     padding: 0;
+    float: right;
 }
 
 .name {
-    font-size: 53px;
+    font-size: 45px;
     margin: 6% 0 0 2%;
     height: 0.9em;
     text-align: center;
@@ -89,99 +81,151 @@ div {
 }
 
 .name:hover {
-    cursor:pointer;
-
+    cursor: pointer;
 }
 
-.mypicture img {
-    float:right;
-    margin-top:-40%;
-    margin-right:7%;
-    border-radius:14em;
-    display:none;
+.name ul {
+    margin: 1%;
+}
+
+.name li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+#nextName {
+    padding-right: 8%;
 }
 
 .jobtitle {
-    font-size: 46px;
+    font-size: 45px;
     margin: 11.2em 0 0 13em;
     border-radius: 2rem;
     padding-left: 0.2em;
     width: 48%;
+    display: inline-block;
+
+}
+
+.jobtitle ul {
+    margin: -4%;
+}
+
+.jobtitle li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 4%;
+    padding-left:0%;
+}
+
+.name .fa,
+.jobtitle .fa {
+    color: red;
+}
+
+.fa:hover {
+    cursor: pointer;
+}
+
+.myName:hover,
+#webTitle:hover {
+    cursor: pointer;
 }
 
 .aboutme,
 .portfolio {
     font-size: 16px;
-    font-family: 'Oswald', sans-serif;
     padding: 0.5em;
     border-radius: 0.5rem;
     box-sizing: border-box;
     margin-bottom: 4em;
-    /*background: linear-gradient(orange, yellow);*/
-}
-
-.aboutme h3 {
-    text-decoration: underline;
-
 }
 
 .aboutme {
     margin-left: 6%;
-    margin-top:-27em;
-    width:90%;
+    margin-top: -27em;
+    width: 90%;
     display: none;
+    text-align: center;
+}
+
+.aboutme h3 {
+    text-decoration: underline;
+}
+
+.partI,
+.partII,
+.partIII {
+    font-family: 'Oswald', sans-serif;
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    padding: 2%;
+    margin-right: 2%;
+    background: linear-gradient(#FF851B, #FFDC00);
+    border-radius: 2em;
+    box-shadow: 0px 6px 7px #FF4136;
+
+}
+
+.aboutme p {
+    height:100%;
+}
+
+.portfolio-title {
+    float:right;
+    padding-right:2%;
+    margin-top:1%;
+    font-size:27px;
+    color: #b3b3b3;
+    display:none;
+}
+
+.headers > h2 {
+    font-family: 'Bilbo', cursive;
+    display: none;
+    color: #FF851B;
+    float: right;
+    position: absolute;
+    opacity: 1;
+    font-size: 45px;
+    margin: 14% 3% 0 25%;
+    padding:1%;
+    border-radius:2em;
+    box-shadow: 0px 0px 40px white;
+    width:32%;
     text-align:center;
 }
 
-.aboutme .partI,
-.partII,
-.partIII {
-    display:inline-block;
-    vertical-align: top;
-    width:25%;
-    padding:2%;
-    margin-right:2%;
-    background: linear-gradient(#FF851B, #FFDC00);
-    border-radius:2em;
-    box-shadow: 0px 6px 7px #FF4136;
+.headers h2 {
+    margin-left:27%;
 }
 
-/*.portfolio {
-    text-decoration: underline;
-    margin-left: 27em;
-    margin-top:-23em;
-    width: 50%;
-    height: 37em;
-}*/
+.portfolio-images {
+    width:47%;
 
-.headers > h2 {
-    text-decoration: underline;
-    display:none;
 }
 
 .portfolio-images > img {
-    height: 23em;
+    height: 20em;
     width: auto;
-    display:none;
+    display: none;
+    padding: 0 63% 0;
+    opacity: .2;
+    margin-top: 14.5%;
+    width:100%;
+    height:auto;
+}
+
+.portfolio-images > img:hover {
+    opacity: 1;
 }
 
 .aboutme_page,
 .streetfight,
 .karma,
 .nytimes {
-    display:none;
-}
-
-.navigateForward,
-.navigateBack {
-    /*color:white;*/
-}
-.portfolio a:link {
-    opacity: 0.3;
-}
-
-.portfolio a:hover {
-    opacity: 1;
+    display: none;
 }
 
 a:visited {
@@ -193,24 +237,13 @@ a:link {
     text-decoration: inherit;
 }
 
-@media screen and (max-width: 400px) {
-    /*.masthead {
-        background-size: contain;
-        height:22em;
-        margin: 1em 36em 0em 1em;
-    }
+@media screen and (max-width: 768px) {
 
     .name {
-        font-size: 29px
-        top:0.5em;
-        left:0.5em;
-        width:21%;
+        font-size: 44px;
     }
 
     .jobtitle {
         font-size:26px;
-        top:9.2em;
-        left:7.2em;
-        width:22%;
-    }*/
+    }
 }

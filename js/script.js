@@ -4,44 +4,59 @@ var i = 0;
 
 $(function() {
 
-    $('.name').click(function(){
+    $('.name').click(function() {
         $('.aboutme').slideToggle(1000);
-        $('.masthead').toggleClass('masthead-change');
+        $(headers[i]).hide();
+        $(images[i]).hide();
+        $('.masthead').addClass('masthead-change');
+        i = 0;
+        $('.portfolio-title').hide();
 
     });
 
-    $('.jobtitle').click(function(){
-    	$('.masthead').toggleClass('masthead-change');
+    $('.jobtitle').click(function() {
+        $('.portfolio-title').show();
+        $('.masthead').addClass('masthead-change');
         $('.aboutme').hide();
         fill(i);
-    	console.log();
 
-    	$(".navigateForward").click(function() {
+    });
+
+    $("#next").click(function() {
         if (i < 3) {
             i++;
             fill(i);
         } else if (i == 3) {
-        	i=0;
-        	fill(i);
+            i = 0;
+            fill(i);
         };
 
-    })
+    });
 
-})    	
+    $(".portfolio-images").mouseover(function() {
+        $('.headers').hide();
+        
+    });
 
-});    
+    $(".portfolio-images").mouseout(function() {
+        $('.headers').show();
 
-function pulsate() {
-  for(var i=0; i<2; i++) {
-    $("#pulsate").animate({opacity: 0.2}, 1000, 'linear')
-     .animate({opacity: 1}, 1000, 'linear');
-     console.log()
-  }
-}
+    });
 
 function fill(i) {
-        return $(headers[i]).slideToggle().siblings().hide(),
-            $(images[i]).slideToggle(1000).siblings().hide(),
-            console.log(i);
-    }
+        console.log(i);
+        return $(images[i]).fadeIn().siblings().hide(),
+            $(headers[i]).fadeIn().siblings().hide();
 
+};
+
+})
+
+// function pulsate() {
+//   for(var i=0; i<2; i++) {
+//     $("#pulsate").animate({opacity: 0.2}, 1000, 'linear')
+//      .animate({opacity: 1}, 1000, 'linear');
+//   }
+// }
+
+// Images are not showing up, i is not displaying every 3rd click
